@@ -12,7 +12,7 @@ const mockProps = (sourceChapter: number, sourceVariant: string) => {
 };
 
 test('Markdown page renders correctly', () => {
-  const app = <Markdown {...mockProps(1, 'default')} />;
+  const app = <Markdown {...mockProps(4, 'default')} />;
   const tree = mount(app);
   expect(tree.debug()).toMatchSnapshot();
 });
