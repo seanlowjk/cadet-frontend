@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Redirect, Route, RouteComponentProps, Switch } from 'react-router';
 
+import AchievementBoard from '../../components/achievements/AchievementBoard';
 import Grading from '../../containers/academy/grading';
 import AssessmentContainer from '../../containers/assessment';
 import Dashboard from '../../containers/dashboard/DashboardContainer';
@@ -81,6 +82,7 @@ class Academy extends React.Component<IAcademyProps> {
           />
           <Route path="/academy/groundcontrol" component={GroundControl} />
           <Route path="/academy/dashboard" component={Dashboard} />
+          <Route path="/academy/achievements" component={AchievementBoard} />
           <Route path={`/academy/grading/${gradingRegExp}`} component={Grading} />
           <Route path={'/academy/material'} component={MaterialUpload} />
           <Route path="/academy/sourcereel" component={Sourcereel} />
